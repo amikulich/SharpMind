@@ -1,0 +1,96 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Art Bot</title>
+    <link rel="icon" type="image/ico" href="Arosne2.ico" />
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <!----requred-js-files---->
+    <script src="js/bootstrap.min.js"></script>
+    <!----//requred-js-files---->
+    <script src="js/hover_pack.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+						});
+					});
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header-shadow">
+                <div class="header-top">
+                    <div class="logo">
+                        <a href="default.html"><img src="images/Arosne.png" alt="" /></a>
+                    </div>
+                    <nav class="navbar navbar-default menu" role="navigation">
+                        <h3 class="nav_right"><a href="default.html"><img src="images/Arosne.png" class="img-responsive" alt="" /></a></h3>
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav menu1">
+                                    <li><a href="#services" class='scroll'>Features</a></li>
+                                    <li><a href="privacy.html">Privacy statement</a></li>
+                                    <li><a href="#contacts" class='scroll'>Contacts</a></li>
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="index-banner" id="home">
+            <article style="position: absolute; width: 100%;">
+                <div class="banner-wrap">
+                    <div class="slider-left">
+                        <h1>Play<br><span class="m_2">games</span></h1>
+                        <p>To develop your brain</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="services" id="services">
+                <div class="m_3"><span class="left_line1"> </span><h3>Features</h3><span class="right_line1"> </span></div>
+                <div class="row service_grids">
+                    <div class="col-md-3 text-center service_grid1">
+                        <h3 class="m_4">play math</h3>
+                        <p class="m_5">Mathematical quiz. Quick and complex. Your brain will simply say "thank you"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <ul id="contacts">
+                <li><a href="https://join.skype.com/bot/3a26a4d4-f75a-4feb-b3e0-37a7fa24e5fc" class="m_5">Add the bot to your Skype contacts</a></li>
+            </ul>
+            <div class="clear"> </div>
+        </div>
+    </div>
+</body>
+</html>

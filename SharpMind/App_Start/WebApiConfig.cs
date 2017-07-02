@@ -1,11 +1,8 @@
-﻿using Newtonsoft.Json;
+﻿using System.Web.Http;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Http;
 
-namespace SharpMind
+namespace SharpMind.Api
 {
     public static class WebApiConfig
     {
@@ -30,7 +27,7 @@ namespace SharpMind
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
+                defaults: new { controller = "Api.BotActivity", action = "Post", id = RouteParameter.Optional }
             );
         }
     }
