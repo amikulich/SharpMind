@@ -124,11 +124,12 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Arosne2.ico" />
+    <Content Include="Arosne4.ico" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\style.css" />
     <Content Include="default.html" />
     <Content Include="Global.asax" />
+    <Content Include="images\Arosne4.ico" />
     <Content Include="images\banner-bottom.png" />
     <Content Include="images\banner.jpg" />
     <Content Include="images\border1.png" />
@@ -141,6 +142,7 @@
     <Content Include="images\msg.png" />
     <Content Include="images\pattern.jpg" />
     <Content Include="images\search.png" />
+    <Content Include="images\Skype-PNG-Image.png" />
     <Content Include="images\top-move.png" />
     <Content Include="js\app.js" />
     <Content Include="js\bootstrap.min.js" />
@@ -191,7 +193,7 @@
     <EnableMSDeployAppOffline>true</EnableMSDeployAppOffline>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Arosne2.ico</ApplicationIcon>
+    <ApplicationIcon>Arosne4.ico</ApplicationIcon>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
