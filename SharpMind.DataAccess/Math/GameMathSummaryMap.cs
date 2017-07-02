@@ -4,7 +4,7 @@ using SharpMind.DataAccess.Mappings;
 
 namespace SharpMind.DataAccess.Math
 {
-    [Document(Name = "mathniac_highscores")]
+    [Document(Name = "math_highscore")]
     internal class GameMathSummaryMap : MapBase
     {
         public string UserName { get; set; }
