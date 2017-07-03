@@ -3,10 +3,10 @@ using SharpMind.DataAccess.Infrastructure;
 
 namespace SharpMind.DataAccess.Mappings
 {
-    [Document(Name = "predefined_command")]
-    internal class PredefinedCommandMap : MapBase
+    [Document(Name = "predefined_response")]
+    internal class PredefinedResponseMap : MapBase
     {
-        public PredefinedCommandMap()
+        public PredefinedResponseMap()
         {
             Keys = new List<string>();
             AlternativeResponses = new List<string>();

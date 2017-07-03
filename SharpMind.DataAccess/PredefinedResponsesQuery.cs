@@ -5,7 +5,7 @@ using SharpMind.DataAccess.Mappings;
 
 namespace SharpMind.DataAccess
 {
-    public class PredefinedCommandsQuery
+    public class PredefinedResponsesQuery
     {
         private static readonly Random Random = new Random();
 
@@ -14,7 +14,7 @@ namespace SharpMind.DataAccess
             using (var dbContext = new MongoDriverWrapper())
             {
                 var map = dbContext
-                    .All<PredefinedCommandMap>()
+                    .All<PredefinedResponseMap>()
                     .FirstOrDefault(x => x.Keys.Contains(key));
 
                 if (map != null && map.AlternativeResponses.Any())

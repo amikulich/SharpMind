@@ -61,10 +61,10 @@
     <Compile Include="Infrastructure\MongoDriverWrapper.cs" />
     <Compile Include="Mappings\CacheMap.cs" />
     <Compile Include="Mappings\MapBase.cs" />
-    <Compile Include="Mappings\PredefinedCommandMap.cs" />
+    <Compile Include="Mappings\PredefinedResponseMap.cs" />
     <Compile Include="Math\GameMathRankingsRepository.cs" />
     <Compile Include="Math\GameMathSummaryMap.cs" />
-    <Compile Include="PredefinedCommandsQuery.cs" />
+    <Compile Include="PredefinedResponsesQuery.cs" />
     <Compile Include="PrivateInjector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

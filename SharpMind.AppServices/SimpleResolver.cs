@@ -5,11 +5,11 @@ namespace SharpMind.AppServices
 {
     public class SimpleResolver : ISimpleResolver
     {
-        private readonly PredefinedCommandsQuery _predefinedCommandsQuery = new PredefinedCommandsQuery();
+        private readonly PredefinedResponsesQuery _predefinedResponsesQuery = new PredefinedResponsesQuery();
 
         public bool TryResolve(Activity activity, out string message)
         {
-            message = _predefinedCommandsQuery.Execute(activity.Text.Replace("?", "").Trim().ToLower());
+            message = _predefinedResponsesQuery.Execute(activity.Text.Replace("?", "").Trim().ToLower());
 
             return !string.IsNullOrEmpty(message);
         }
