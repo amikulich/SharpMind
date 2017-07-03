@@ -10,7 +10,7 @@ namespace SharpMind.AppServices
             return new Attachment()
             {
                 Content = adaptiveCard,
-                ContentType = "application/vnd.microsoft.card.adaptive"
+                ContentType = AdaptiveCard.ContentType
             };
         }
     }
