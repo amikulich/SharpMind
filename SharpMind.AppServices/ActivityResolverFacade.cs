@@ -28,7 +28,10 @@ namespace SharpMind.AppServices
             ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
             try
             {
-                Logger.Log(activity.Text, activity.From.Name);
+                Logger.LogMessage(activity.Text, 
+                        !string.IsNullOrEmpty(activity.From.Name) ? activity.From.Name : activity.From.Id,
+                        activity.Type,
+                        activity.ServiceUrl);
 
                 switch (activity.Type)
                 {
@@ -60,7 +63,11 @@ namespace SharpMind.AppServices
 
                 await connector.Conversations.ReplyToActivityAsync(reply);
 
-                Logger.Log($"Crash on message:{activity.Text}", activity.From.Name, e);
+                Logger.LogException($"Crash on message:{activity.Text}",
+                    !string.IsNullOrEmpty(activity.From.Name) ? activity.From.Name : activity.From.Id,
+                    activity.Type,
+                    activity.ServiceUrl, 
+                    e);
             }
         }
     }
