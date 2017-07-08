@@ -17,7 +17,7 @@ namespace SharpMind.AppServices
         [NonSerialized]
         private IGameMathRankingsRepository _gameMathRankingsRepository;
 
-        private const int DefaultQuestionsCount = 10;
+        private const int DefaultQuestionsCount = 5;
 
         public GameMathDialog()
         {
