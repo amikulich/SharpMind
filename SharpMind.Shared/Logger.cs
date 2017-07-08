@@ -26,6 +26,7 @@ namespace SharpMind.Shared
                     DateTime = DateTime.UtcNow,
                     UserName = userName,
                     ActivityType = activityType,
+                    Channel = channel,
                     Message = message
                 };
 
@@ -45,6 +46,7 @@ namespace SharpMind.Shared
                     StackTrace = exception?.ToString(),
                     UserName = userName,
                     ActivityType = activityType,
+                    Channel = channel,
                     Message = message
                 };
 
@@ -64,6 +66,8 @@ namespace SharpMind.Shared
             public string Message { get; set; }
 
             public string ActivityType { get; set; }
+
+            public string Channel { get; set; }
         }
     }
 }
