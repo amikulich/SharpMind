@@ -21,6 +21,7 @@ namespace SharpMind.Domain.Math
 
         protected GameMath()
         {
+            //test row
         }
 
         public GameMath(string userName, int questionsCount) : this()
